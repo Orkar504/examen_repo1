@@ -12,17 +12,10 @@
 </head>
 <body>
 <div style="width: 100vw; display: flex; justify-content: center; padding-top: 10px" ><h1>Proveedores</h1></div>
-    <div class="container my-2 bg-indigo">
-        <div class="row justify-content-md-center">
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class="h1 text-white">Mantenimiento de alumnos</h1>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row justify-content-md-left">
             <div class="col-12 d-flex justify-content-left">
-                <a href="" class="btn btn-success">Crear</a>
+                <a href="{{route('proveedores.vista.nuevo')}}" class="btn btn-success">Crear</a>
             </div>
         </div>
     </div>

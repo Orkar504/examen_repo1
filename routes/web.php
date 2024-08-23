@@ -23,3 +23,7 @@ Route::post("/productos/create", [ProductoController::class, "crearProducto"])->
 
 Route::get("/proveedores", [ProveedoresController::class, "verProveedores"])->name("proveedores");
 
+Route::get("/proveedores/crear", [ProveedoresController::class, "vistaNuevoProveedor"])->name("proveedores.vista.nuevo");
+
+Route::post("/proveedores/create", [ProveedoresController::class, "crearProveedor"])->name("proveedores.crear");
+

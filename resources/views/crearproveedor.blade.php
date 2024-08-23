@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nuevo Producto</title>
+    <title>Nuevo Proveedor</title>
 </head>
 <body>
     <div style="width: 100vw; display: flex; justify-content: center; padding-top: 10px" ><h1>Crear Producto</h1></div>
@@ -13,31 +13,31 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <br>
-                <form action="{{route('productos.crear')}}" method="POST">
+                <form action="{{route('proveedores.crear')}}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label for="id">Id:</label>
-                        <input type="text" class="form-control" name="id"/>
+                        <label for="id">Id Proveedor:</label>
+                        <input type="text" class="form-control" name="idProveedor"/>
                     </div>
                     <div class="form-group">
-                        <label for="descripcion">Descripcion:</label>
-                        <input type="text"class="form-control" name="descripcion"/>
+                        <label for="descripcion">Nombre:</label>
+                        <input type="text"class="form-control" name="nombre"/>
                     </div>
                     <div class="form-group">
-                        <label for="precio">Precio</label>
-                        <input type="text" class="form-control" name="precio"/>
+                        <label for="precio">Fecha Registro</label>
+                        <input type="text" class="form-control" name="fechaRegistro"/>
                     </div>
                     <div class="form-group">
-                        <label for="stock">Stock</label>
-                        <input type="text" class="form-control" name="stock"/>
+                        <label for="stock">Telefono:</label>
+                        <input type="text" class="form-control" name="telefono"/>
                     </div>
                     <div class="form-group">
-                        <label for="pagaIsv">Paga Isv</label>
-                        <input type="text" class="form-control" name="pagaIsv"/>
+                        <label for="pagaIsv">Correo:</label>
+                        <input type="text" class="form-control" name="correo"/>
                     </div>
                     <br>
                     <div class="form-group">
-                        <a href="{{route('productos')}}" class="btn btn-danger">Volver</a>
+                        <a href="{{route('proveedores')}}" class="btn btn-danger">Volver</a>
                         <button type="submit" class="btn btn-success">Crear</button>
                     </div>
                 </form>
